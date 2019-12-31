@@ -1,23 +1,25 @@
 {
-    "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-skeleton",
+    "description": "Skeleton Application for Laminas API Tools",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-skeleton/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-skeleton",
+        "rss": "https://github.com/laminas-api-tools/api-tools-skeleton/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
     "config": {
-    	"process-timeout": 5000
+        "process-timeout": 5000,
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
@@ -27,28 +29,33 @@
     "require": {
         "php": ">=5.3.23",
         "bshaffer/oauth2-server-php": "dev-develop",
-        "rwoverdijk/assetmanager": "~1.3",
-        "zendframework/zendframework": "~2.3",
-        "zfcampus/zf-apigility": "~1.0-dev",
-        "zfcampus/zf-apigility-provider": "~1.0-dev",
-        "zfcampus/zf-apigility-documentation": "~1.0-dev",
-        "zfcampus/zf-api-problem": "~1.0-dev",
-        "zfcampus/zf-content-negotiation": "~1.0-dev",
-        "zfcampus/zf-content-validation": "~1.0-dev",
-        "zfcampus/zf-development-mode": "~2.0",
-        "zfcampus/zf-hal": "~1.0-dev",
-        "zfcampus/zf-mvc-auth": "~1.0-dev",
-        "zfcampus/zf-oauth2": "~1.0-dev",
-        "zfcampus/zf-rest": "~1.0-dev",
-        "zfcampus/zf-rpc": "~1.0-dev",
-        "zfcampus/zf-versioning": "~1.0-dev"
+        "laminas-api-tools/api-tools": "~1.0-dev",
+        "laminas-api-tools/api-tools-api-problem": "~1.0-dev",
+        "laminas-api-tools/api-tools-content-negotiation": "~1.0-dev",
+        "laminas-api-tools/api-tools-content-validation": "~1.0-dev",
+        "laminas-api-tools/api-tools-documentation": "~1.0-dev",
+        "laminas-api-tools/api-tools-hal": "~1.0-dev",
+        "laminas-api-tools/api-tools-mvc-auth": "~1.0-dev",
+        "laminas-api-tools/api-tools-oauth2": "~1.0-dev",
+        "laminas-api-tools/api-tools-provider": "~1.0-dev",
+        "laminas-api-tools/api-tools-rest": "~1.0-dev",
+        "laminas-api-tools/api-tools-rpc": "~1.0-dev",
+        "laminas-api-tools/api-tools-versioning": "~1.0-dev",
+        "laminas/laminas": "~2.3",
+        "laminas/laminas-development-mode": "~2.0",
+        "laminas/laminas-zendframework-bridge": "^1.0",
+        "rwoverdijk/assetmanager": "~1.3"
     },
     "require-dev": {
-        "zendframework/zftool": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "~1.0-dev",
-        "zfcampus/zf-configuration": "~1.0-dev",
-        "zfcampus/zf-apigility-welcome": "~1.0-dev",
+        "laminas-api-tools/api-tools-admin": "~1.0-dev",
+        "laminas-api-tools/api-tools-configuration": "~1.0-dev",
+        "laminas-api-tools/api-tools-welcome": "~1.0-dev",
+        "laminas/laminas-developer-tools": "dev-master",
+        "laminas/laminastool": "dev-master",
+        "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "dev-master"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-skeleton": "self.version"
     }
 }
