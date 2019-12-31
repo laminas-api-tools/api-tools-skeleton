@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
     <testsuites>
-        <testsuite name="zf-apigility-skeleton">
+        <testsuite name="api-tools-skeleton">
             <directory>./module/Application/test</directory>
         </testsuite>
     </testsuites>

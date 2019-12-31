@@ -1,14 +1,16 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2016 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-skeleton for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
 namespace ApplicationTest\Controller;
 
 use Application\Controller\IndexController;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Name is intentional, to force it to run last; this was necessary as,
@@ -25,8 +27,8 @@ class ZZIndexControllerDevModeTest extends AbstractHttpControllerTestCase
         // etc.
         $configOverrides = [
             'modules' => [
-                'ZF\Apigility\Admin',
-                'ZF\Apigility\Admin\Ui',
+                'Laminas\ApiTools\Admin',
+                'Laminas\ApiTools\Admin\Ui',
             ],
             'module_listener_options' => [
                 'config_cache_enabled' => false,
