@@ -6,15 +6,10 @@
  * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
-namespace Application\Controller;
-
-use Laminas\Mvc\Controller\AbstractActionController;
-use Laminas\View\Model\ViewModel;
-
-class IndexController extends AbstractActionController
-{
-    public function indexAction()
-    {
-        return $this->redirect()->toRoute('api-tools/welcome');
-    }
-}
+return array(
+    'view_manager' => array(
+        'strategies' => array(
+            'ViewJsonStrategy',
+        ),
+    ),
+);
