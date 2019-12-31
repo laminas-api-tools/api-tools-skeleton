@@ -1,14 +1,16 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-skeleton for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
 return array(
     'router' => array(
         'routes' => array(
             'home' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Laminas\Mvc\Router\Http\Literal',
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
@@ -51,9 +53,9 @@ return array(
     ),
     'service_manager' => array(
         'abstract_factories' => array(
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Db\Adapter\AdapterAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
+            'Laminas\Cache\Service\StorageCacheAbstractServiceFactory',
+            'Laminas\Db\Adapter\AdapterAbstractServiceFactory',
+            'Laminas\Log\LoggerAbstractServiceFactory',
         ),
         'aliases' => array(
             'translator' => 'MvcTranslator',
