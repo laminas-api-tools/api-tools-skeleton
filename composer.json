@@ -1,23 +1,25 @@
 {
-    "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-skeleton",
+    "description": "Skeleton Application for Laminas API Tools",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-skeleton/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-skeleton",
+        "rss": "https://github.com/laminas-api-tools/api-tools-skeleton/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
     "config": {
-        "process-timeout": 5000
+        "process-timeout": 5000,
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
@@ -27,21 +29,26 @@
     },
     "require": {
         "php": "^5.5 || ^7.0",
-        "zendframework/zendframework": "^2.5.3",
-        "zfcampus/zf-apigility": "~1.1",
-        "zfcampus/zf-apigility-documentation": "^1.0.5",
-        "zfcampus/zf-development-mode": "~2.0"
+        "laminas-api-tools/api-tools": "~1.1",
+        "laminas-api-tools/api-tools-documentation": "^1.0.5",
+        "laminas/laminas": "^2.5.3",
+        "laminas/laminas-development-mode": "~2.0",
+        "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
-        "zendframework/zftool": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "^1.4.1",
-        "zfcampus/zf-apigility-admin-ui": "^1.2.2",
+        "laminas-api-tools/api-tools-admin": "^1.4.1",
+        "laminas-api-tools/api-tools-admin-ui": "^1.2.2",
+        "laminas/laminas-developer-tools": "dev-master",
+        "laminas/laminastool": "dev-master",
+        "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "~1.0"
     },
     "suggest": {
-        "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ~1.0 to create Doctrine-Connected REST services",
-        "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ~1.0 to add HTTP caching to your API",
+        "laminas-api-tools/api-tools-doctrine": "laminas-api-tools/api-tools-doctrine ~1.0 to create Doctrine-Connected REST services",
+        "laminas-api-tools/api-tools-http-cache": "laminas-api-tools/api-tools-http-cache ~1.0 to add HTTP caching to your API",
         "zfr/zfr-cors": "zfr/zfr-cors ~1.2 to add CORS support to your API"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-skeleton": "self.version"
     }
 }
