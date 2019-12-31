@@ -4,7 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <testsuites>
-        <testsuite name="zf-apigility-skeleton">
+        <testsuite name="api-tools-skeleton">
             <directory>./module/Application/test</directory>
         </testsuite>
     </testsuites>

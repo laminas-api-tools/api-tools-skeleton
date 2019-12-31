@@ -38,9 +38,9 @@ if ! grep -q "cd /var/www" /home/vagrant/.profile; then
     echo "cd /var/www" >> /home/vagrant/.profile
 fi
 
-echo "** [ZF] Run the following command to install dependencies, if you have not already:"
+echo "** [Laminas] Run the following command to install dependencies, if you have not already:"
 echo "    vagrant ssh -c 'composer install'"
-echo "** [ZF] Visit http://localhost:8080 in your browser for to view the application **"
+echo "** [Laminas] Visit http://localhost:8080 in your browser for to view the application **"
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -51,6 +51,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
-    vb.customize ["modifyvm", :id, "--name", "Apigility - Ubuntu 16.04"]
+    vb.customize ["modifyvm", :id, "--name", "Laminas API Tools - Ubuntu 16.04"]
   end
 end
