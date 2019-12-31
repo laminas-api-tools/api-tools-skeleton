@@ -6,13 +6,6 @@
  * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
-return [
-    'api-tools-content-negotiation' => [
-        'selectors' => [],
-    ],
-    'db' => [
-        'adapters' => [
-            'dummy' => [],
-        ],
-    ],
-];
+namespace ApiTools;
+
+const VERSION = '1.5.0dev';

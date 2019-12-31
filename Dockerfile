@@ -1,5 +1,5 @@
 #
-# Use this dockerfile to run apigility.
+# Use this dockerfile to run api-tools.
 #
 # Start the server using docker-compose:
 #
@@ -8,18 +8,18 @@
 #
 # You can install dependencies via the container:
 #
-#   docker-compose run apigility composer install
+#   docker-compose run api-tools composer install
 #
 # You can manipulate dev mode from the container:
 #
-#   docker-compose run apigility composer development-enable
-#   docker-compose run apigility composer development-disable
-#   docker-compose run apigility composer development-status
+#   docker-compose run api-tools composer development-enable
+#   docker-compose run api-tools composer development-disable
+#   docker-compose run api-tools composer development-status
 #
 # OR use plain old docker 
 #
-#   docker build -f Dockerfile-dev -t apigility .
-#   docker run -it -p "8080:80" -v $PWD:/var/www apigility
+#   docker build -f Dockerfile-dev -t api-tools .
+#   docker run -it -p "8080:80" -v $PWD:/var/www api-tools
 #
 FROM php:7.2-apache
 
