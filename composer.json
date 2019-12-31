@@ -1,25 +1,26 @@
 {
-    "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility",
+    "name": "laminas-api-tools/api-tools-skeleton",
+    "description": "Skeleton Application for Laminas API Tools",
     "type": "project",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf",
-        "zendframework"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues",
-        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "rss": "https://github.com/zfcampus/zf-apigility-skeleton/releases.atom",
-        "chat": "https://zendframework-slack.herokuapp.com",
-        "forum": "https://discourse.zendframework.com/c/questions/apigility"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-skeleton/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-skeleton",
+        "rss": "https://github.com/laminas-api-tools/api-tools-skeleton/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
     "config": {
-        "process-timeout": 5000
+        "process-timeout": 5000,
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
@@ -29,22 +30,24 @@
     },
     "require": {
         "php": "^5.6 || ^7.0",
-        "zendframework/zend-component-installer": "^1.1.1 || ^2.1.1",
-        "zfcampus/zf-apigility": "^1.4",
-        "zfcampus/zf-apigility-documentation": "^1.3",
-        "zfcampus/zf-development-mode": "^3.2"
+        "laminas-api-tools/api-tools": "^1.4",
+        "laminas-api-tools/api-tools-documentation": "^1.3",
+        "laminas/laminas-component-installer": "^1.1.1 || ^2.1.1",
+        "laminas/laminas-development-mode": "^3.2",
+        "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
-        "zendframework/zend-developer-tools": "^1.2.1",
-        "zendframework/zend-test": "^2.6.1 || ^3.2",
-        "zfcampus/zf-apigility-admin": "^1.6",
-        "zfcampus/zf-asset-manager": "^1.2",
-        "zfcampus/zf-composer-autoloading": "^1.1.1 || ^2.1",
+        "laminas-api-tools/api-tools-admin": "^1.6",
+        "laminas-api-tools/api-tools-asset-manager": "^1.2",
+        "laminas/laminas-composer-autoloading": "^1.1.1 || ^2.1",
+        "laminas/laminas-developer-tools": "^1.2.1",
+        "laminas/laminas-test": "^2.6.1 || ^3.2",
+        "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "^1.3"
     },
     "suggest": {
-        "zfcampus/zf-apigility-doctrine": "zfcampus/zf-apigility-doctrine ^2.2 to create Doctrine-Connected REST services",
-        "zfcampus/zf-http-cache": "zfcampus/zf-http-cache ^1.4 to add HTTP caching to your API",
+        "laminas-api-tools/api-tools-doctrine": "laminas-api-tools/api-tools-doctrine ^2.2 to create Doctrine-Connected REST services",
+        "laminas-api-tools/api-tools-http-cache": "laminas-api-tools/api-tools-http-cache ^1.4 to add HTTP caching to your API",
         "zfr/zfr-cors": "zfr/zfr-cors ^1.5 to add CORS support to your API"
     },
     "autoload": {
@@ -57,17 +60,22 @@
             "ApplicationTest\\": "module/Application/test/"
         },
         "files": [
-            "src/Apigility/constants.php"
+            "src/ApiTools/constants.php"
         ]
     },
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
-        "development-disable": "zf-development-mode disable",
-        "development-enable": "zf-development-mode enable",
-        "development-status": "zf-development-mode status",
-        "post-create-project-cmd": ["@development-enable"],
+        "development-disable": "laminas-development-mode disable",
+        "development-enable": "laminas-development-mode enable",
+        "development-status": "laminas-development-mode status",
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
         "serve": "php -S 0.0.0.0:8080 -t public/",
         "test": "phpunit"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-skeleton": "self.version"
     }
 }

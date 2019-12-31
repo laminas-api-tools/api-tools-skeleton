@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- [#168](https://github.com/zfcampus/zf-apigility-skeleton/pull/168) fixes file permissions of the `/var/www` folder when using Vagrant,
+- [zfcampus/zf-apigility-skeleton#168](https://github.com/zfcampus/zf-apigility-skeleton/pull/168) fixes file permissions of the `/var/www` folder when using Vagrant,
   setting them to the `www-data` user.
 
 ## 1.5.1 - 2018-08-15
@@ -45,7 +45,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- [#165](https://github.com/zfcampus/zf-apigility-skeleton/pull/165) updates the `composer.lock` by running `composer install` using a
+- [zfcampus/zf-apigility-skeleton#165](https://github.com/zfcampus/zf-apigility-skeleton/pull/165) updates the `composer.lock` by running `composer install` using a
   PHP 5.6 release.  This was done as the 1.5.0 release was made using a PHP 7.1+
   binary, and thus installed versions of dependencies that were compatible with
   those release - but not with 5.6.  Once a release is made with this patch,
@@ -64,14 +64,14 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- [#159](https://github.com/zfcampus/zf-apigility-skeleton/pull/159) adds a development requirement on zendframework/zend-test, ensuring users
+- [zfcampus/zf-apigility-skeleton#159](https://github.com/zfcampus/zf-apigility-skeleton/pull/159) adds a development requirement on zendframework/zend-test, ensuring users
   have the ability to run existing unit tests, as well as write and execute new ones out of the box.
 
 ### Changed
 
-- [#164](https://github.com/zfcampus/zf-apigility-skeleton/pull/164) updates all dependencies to versions that will work with PHP 7.2, where possible.
+- [zfcampus/zf-apigility-skeleton#164](https://github.com/zfcampus/zf-apigility-skeleton/pull/164) updates all dependencies to versions that will work with PHP 7.2, where possible.
 
-- [#154](https://github.com/zfcampus/zf-apigility-skeleton/pull/154) modifies the `config/autoload/.gitignore` rules to omit `*.local-development.php` files.
+- [zfcampus/zf-apigility-skeleton#154](https://github.com/zfcampus/zf-apigility-skeleton/pull/154) modifies the `config/autoload/.gitignore` rules to omit `*.local-development.php` files.
 
 ### Deprecated
 
