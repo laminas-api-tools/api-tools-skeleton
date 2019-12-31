@@ -1,4 +1,4 @@
-Apigility Skeleton Application
+Laminas API Tools Skeleton Application
 ==============================
 
 Installation
@@ -6,16 +6,16 @@ Installation
 
 ### Via release tarball
 
-Grab the latest release via the [Apigility website](http://apigility.org/)
-and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases).
+Grab the latest release via the [Laminas API Tools website](https://api-tools.getlaminas.org/)
+and/or the [releases page](https://github.com/laminas-api-tools/api-tools-skeleton/releases).
 At the time of this writing, that URI is:
 
-- https://github.com/zfcampus/zf-apigility-skeleton/releases/download/0.6.0/zf-apigility-skeleton.tgz
+- https://github.com/laminas-api-tools/api-tools-skeleton/releases/download/0.6.0/api-tools-skeleton.tgz
 
 Untar it:
 
 ```bash
-tar xzf zf-apigility-skeleton.tgz
+tar xlaminas api-tools-skeleton.tgz
 ```
 
 ### Via Composer (create-project)
@@ -25,7 +25,7 @@ to create the project in one go:
 
 ```bash
 curl -s https://getcomposer.org/installer | php --
-php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+php composer.phar create-project -sdev laminas-api-tools/api-tools-skeleton path/to/install
 ```
 
 ### Via Git (clone)
@@ -33,7 +33,7 @@ php composer.phar create-project -sdev zfcampus/zf-apigility-skeleton path/to/in
 First, clone the repository:
 
 ```bash
-git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
+git clone https://github.com/laminas-api-tools/api-tools-skeleton.git # optionally, specify the directory in which to clone
 cd path/to/install
 ```
 
@@ -82,7 +82,7 @@ PHP's built-in web server did not start supporting the `PATCH` HTTP method until
 **Disable all opcode caches when running the admin!**
 
 The admin cannot and will not run correctly when an opcode cache, such as APC or
-OpCache, is enabled. Apigility does not use a database to store configuration;
+OpCache, is enabled. Laminas API Tools does not use a database to store configuration;
 instead, it uses PHP configuration files. Opcode caches will cache these files
 on first load, leading to inconsistencies as you write to them, and will
 typically lead to a state where the admin API and code become unusable.
