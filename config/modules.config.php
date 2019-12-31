@@ -1,7 +1,9 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-skeleton for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
 /**
@@ -9,19 +11,19 @@
  */
 return array(
     'Application',
-    'ZF\DevelopmentMode',
-    'ZF\Apigility',
-    'ZF\Apigility\Provider',
-    'ZF\Apigility\Documentation',
+    'Laminas\DevelopmentMode',
+    'Laminas\ApiTools',
+    'Laminas\ApiTools\Provider',
+    'Laminas\ApiTools\Documentation',
     'AssetManager',
-    'ZF\ApiProblem',
-    'ZF\Configuration',
-    'ZF\OAuth2',
-    'ZF\MvcAuth',
-    'ZF\Hal',
-    'ZF\ContentNegotiation',
-    'ZF\ContentValidation',
-    'ZF\Rest',
-    'ZF\Rpc',
-    'ZF\Versioning',
+    'Laminas\ApiTools\ApiProblem',
+    'Laminas\ApiTools\Configuration',
+    'Laminas\ApiTools\OAuth2',
+    'Laminas\ApiTools\MvcAuth',
+    'Laminas\ApiTools\Hal',
+    'Laminas\ApiTools\ContentNegotiation',
+    'Laminas\ApiTools\ContentValidation',
+    'Laminas\ApiTools\Rest',
+    'Laminas\ApiTools\Rpc',
+    'Laminas\ApiTools\Versioning',
 );
