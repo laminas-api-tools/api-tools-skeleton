@@ -3,7 +3,7 @@
     colors="true"
     bootstrap="./vendor/autoload.php">
     <testsuites>
-        <testsuite name="zf-apigility-skeleton">
+        <testsuite name="api-tools-skeleton">
             <directory>./module/Application/test</directory>
         </testsuite>
     </testsuites>
