@@ -1,4 +1,4 @@
-Apigility Skeleton Application
+Laminas API Tools Skeleton Application
 ==============================
 
 Installation
@@ -6,11 +6,11 @@ Installation
 
 ```bash
     curl -s https://getcomposer.org/installer | php --
-    php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com/" zfcampus/zf-apigility-skeleton path/to/install
+    php composer.phar create-project -sdev --repository-url="https://getlaminas.org/" laminas-api-tools/api-tools-skeleton path/to/install
     cd path/to/install
     php public/index.php development enable # put the skeleton in development mode
     mkdir -p data/db/
-    cp vendor/zfcampus/zf-apigility-example/data/status.db data/db/ # copy the example API database
+    cp vendor/laminas-api-tools/api-tools-example/data/status.db data/db/ # copy the example API database
 ```
 
 Now, fire it up! Do one of the following:

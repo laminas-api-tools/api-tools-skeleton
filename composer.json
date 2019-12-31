@@ -1,37 +1,42 @@
 {
-    "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-skeleton",
+    "description": "Skeleton Application for Laminas API Tools",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-skeleton/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-skeleton",
+        "rss": "https://github.com/laminas-api-tools/api-tools-skeleton/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
-    "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com" }
-    ],
-    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "dev-develop",
-        "rwoverdijk/assetmanager": "dev-master",
-        "zfcampus/zf-apigility": "dev-master",
-        "zfcampus/zf-configuration": "dev-master"
+        "laminas-api-tools/api-tools": "dev-master",
+        "laminas-api-tools/api-tools-configuration": "dev-master",
+        "laminas/laminas": "dev-develop",
+        "laminas/laminas-zendframework-bridge": "^1.0",
+        "rwoverdijk/assetmanager": "dev-master"
     },
     "require-dev": {
-        "zendframework/zftool": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master",
-        "zfcampus/zf-apigility-admin": "dev-master",
-        "zfcampus/zf-apigility-example": "dev-master",
-        "zfcampus/zf-apigility-welcome": "dev-master"
+        "laminas-api-tools/api-tools-admin": "dev-master",
+        "laminas-api-tools/api-tools-example": "dev-master",
+        "laminas-api-tools/api-tools-welcome": "dev-master",
+        "laminas/laminas-developer-tools": "dev-master",
+        "laminas/laminastool": "dev-master",
+        "roave/security-advisories": "dev-master"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-skeleton": "self.version"
     }
 }

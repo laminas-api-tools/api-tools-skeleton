@@ -1,7 +1,9 @@
 <?php
+
 /**
- * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2013 Zend Technologies USA Inc. (http://www.zend.com)
+ * @see       https://github.com/laminas-api-tools/api-tools-skeleton for the canonical source repository
+ * @copyright https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas-api-tools/api-tools-skeleton/blob/master/LICENSE.md New BSD License
  */
 
 /**
@@ -25,8 +27,8 @@ if (!defined('APPLICATION_PATH')) {
 $appConfig = include APPLICATION_PATH . '/config/application.config.php';
 
 if (file_exists(APPLICATION_PATH . '/config/development.config.php')) {
-    $appConfig = Zend\Stdlib\ArrayUtils::merge($appConfig, include APPLICATION_PATH . '/config/development.config.php');
+    $appConfig = Laminas\Stdlib\ArrayUtils::merge($appConfig, include APPLICATION_PATH . '/config/development.config.php');
 }
 
 // Run the application!
-Zend\Mvc\Application::init($appConfig)->run();
+Laminas\Mvc\Application::init($appConfig)->run();
