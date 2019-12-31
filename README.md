@@ -1,4 +1,4 @@
-Apigility Skeleton Application
+Laminas API Tools Skeleton Application
 ==============================
 
 Requirements
@@ -11,14 +11,14 @@ Installation
 
 ### Via release tarball
 
-Grab the latest release via the [Apigility website](http://apigility.org/)
-and/or the [releases page](https://github.com/zfcampus/zf-apigility-skeleton/releases); each release
+Grab the latest release via the [Laminas API Tools website](https://api-tools.getlaminas.org/)
+and/or the [releases page](https://github.com/laminas-api-tools/api-tools-skeleton/releases); each release
 has distribution tarballs and zipballs available.
 
 Untar it:
 
 ```bash
-$ tar xzf zf-apigility-skeleton-{version}.tgz
+$ tar xlaminas api-tools-skeleton-{version}.tgz
 ```
 
 (Where `{version}` is the version you downloaded.)
@@ -26,7 +26,7 @@ $ tar xzf zf-apigility-skeleton-{version}.tgz
 Or unzip, if you chose the zipball:
 
 ```bash
-$ unzip zf-apigility-skeleton-{version}.zip
+$ unzip api-tools-skeleton-{version}.zip
 ```
 
 (Where `{version}` is the version you downloaded.)
@@ -38,7 +38,7 @@ to create the project in one go (you need to install [composer](https://getcompo
 
 ```bash
 $ curl -s https://getcomposer.org/installer | php -- --filename=composer
-$ composer create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
+$ composer create-project -sdev laminas-api-tools/api-tools-skeleton path/to/install
 ```
 
 ### Via Git (clone)
@@ -46,7 +46,7 @@ $ composer create-project -sdev zfcampus/zf-apigility-skeleton path/to/install
 First, clone the repository:
 
 ```bash
-# git clone https://github.com/zfcampus/zf-apigility-skeleton.git # optionally, specify the directory in which to clone
+# git clone https://github.com/laminas-api-tools/api-tools-skeleton.git # optionally, specify the directory in which to clone
 $ cd path/to/install
 ```
 
@@ -88,7 +88,7 @@ inspect your APIs.
 
 ### NOTE ABOUT USING APACHE
 
-Apache forbids the character sequences `%2F` and `%5C` in URI paths. However, the Apigility Admin
+Apache forbids the character sequences `%2F` and `%5C` in URI paths. However, the Laminas API Tools Admin
 API uses these characters for a number of service endpoints. As such, if you wish to use the
 Admin UI and/or Admin API with Apache, you will need to configure your Apache vhost/project to
 allow encoded slashes:
@@ -104,7 +104,7 @@ This change will need to be made in your server's vhost file (it cannot be added
 **Disable all opcode caches when running the admin!**
 
 The admin cannot and will not run correctly when an opcode cache, such as APC or
-OpCache, is enabled. Apigility does not use a database to store configuration;
+OpCache, is enabled. Laminas API Tools does not use a database to store configuration;
 instead, it uses PHP configuration files. Opcode caches will cache these files
 on first load, leading to inconsistencies as you write to them, and will
 typically lead to a state where the admin API and code become unusable.
@@ -125,7 +125,7 @@ APIs are typically a specific serialization format, and error reporting is usual
 text, or, with extensions like XDebug, in HTML. This breaks the response payload, making it unusable
 by clients.
 
-For this reason, we recommend disabling `display_errors` when using the Apigility admin interface.
+For this reason, we recommend disabling `display_errors` when using the Laminas API Tools admin interface.
 This can be done using the `-ddisplay_errors=0` flag when using the built-in PHP web server, or you
 can set it in your virtual host or server definition. If you disable it, make sure you have
 reasonable error log settings in place. For the built-in PHP web server, errors will be reported in
@@ -193,13 +193,13 @@ If you develop or deploy using Docker, we provide configuration for you.
 Prepare your development environment using [docker compose](https://docs.docker.com/compose/install/):
 
 ```bash
-$ git clone https://github.com/zfcampus/zf-apigility-skeleton
-$ cd zf-apigility-skeleton
+$ git clone https://github.com/laminas-api-tools/api-tools-skeleton
+$ cd api-tools-skeleton
 $ docker-compose build
 # Install dependencies via composer, if you haven't already:
-$ docker-compose run apigility composer install
+$ docker-compose run api-tools composer install
 # Enable development mode:
-$ docker-compose run apigility composer development-enable
+$ docker-compose run api-tools composer development-enable
 ```
 
 Start the container:
@@ -208,22 +208,22 @@ Start the container:
 $ docker-compose up
 ```
 
-Access Apigility from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
+Access Laminas API Tools from `http://localhost:8080/` or `http://<boot2docker ip>:8080/` if on Windows or Mac.
 
 You may also use the provided `Dockerfile` directly if desired.
 
 Once installed, you can use the container to update dependencies:
 
 ```bash
-$ docker-compose run apigility composer update
+$ docker-compose run api-tools composer update
 ```
 
 Or to manipulate development mode:
 
 ```bash
-$ docker-compose run apigility composer development-enable
-$ docker-compose run apigility composer development-disable
-$ docker-compose run apigility composer development-status
+$ docker-compose run api-tools composer development-enable
+$ docker-compose run api-tools composer development-disable
+$ docker-compose run api-tools composer development-status
 ```
 
 QA Tools
@@ -241,7 +241,7 @@ Additionally, it comes with some basic tests for the shipped
 If you want to add these QA tools, execute the following:
 
 ```bash
-$ composer require --dev phpunit/phpunit squizlabs/php_codesniffer zendframework/zend-test
+$ composer require --dev phpunit/phpunit squizlabs/php_codesniffer laminas/laminas-test
 ```
 
 We provide aliases for each of these tools in the Composer configuration:
