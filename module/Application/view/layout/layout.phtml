@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8">
 <?php
-    echo $this->headTitle('Apigility');
+    echo $this->headTitle('Laminas API Tools');
     echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
     echo $this->headLink(array('rel' => 'icon', 'type' => 'image/png', 'href' => $this->basePath('/img/favicon.png')))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/main.min.css'))
-        ->prependStylesheet($this->basePath('/zf-apigility/css/bootstrap.min.css'));
+        ->prependStylesheet($this->basePath('/api-tools/css/main.min.css'))
+        ->prependStylesheet($this->basePath('/api-tools/css/bootstrap.min.css'));
     echo $this->headScript()
-        ->prependFile($this->basePath('/zf-apigility/js/bootstrap.min.js'))
-        ->prependFile($this->basePath('/zf-apigility/js/jquery.min.js'));
+        ->prependFile($this->basePath('/api-tools/js/bootstrap.min.js'))
+        ->prependFile($this->basePath('/api-tools/js/jquery.min.js'));
 ?>
 
     </head>
@@ -21,7 +21,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a href="<?php echo $this->url('home') ?>" class="navbar-brand">
-                        <img src="<?php echo $this->basePath('/zf-apigility/img/ag-logo.png') ?>">
+                        <img src="<?php echo $this->basePath('/api-tools/img/ag-logo.png') ?>">
                     </a>
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".ag-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -33,8 +33,8 @@
 
                 <div class="collapse navbar-collapse ag-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <?php if (class_exists('ZF\Apigility\Admin\Module', false)): ?>
-                            <li><a href="<?php echo $this->url('zf-apigility/ui') ?>">Admin</a></li>
+                        <?php if (class_exists('Laminas\ApiTools\Admin\Module', false)): ?>
+                            <li><a href="<?php echo $this->url('api-tools/ui') ?>">Admin</a></li>
                         <?php endif; ?>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
         <footer>
             <hr>
             <div class="container center-block">
-                <p>&copy; 2013 - <?php echo date('Y') ?> by <a href="http://www.zend.com">Zend Technologies</a> Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                <p>&copy; 2013 - <?php echo date('Y') ?> by <a href="https://www.zend.com">Laminas Technologies</a> Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
             </div>
         </footer>
         <?php echo $this->inlineScript() ?>
