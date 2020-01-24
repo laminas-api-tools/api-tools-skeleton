@@ -31,14 +31,14 @@
         "php": ">=5.5",
         "laminas-api-tools/api-tools": "~1.1",
         "laminas-api-tools/api-tools-documentation": "^1.0.5",
-        "laminas/laminas": "~2.4",
+        "zendframework/zendframework": "~2.4",
         "laminas/laminas-development-mode": "~2.0",
         "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
         "laminas-api-tools/api-tools-admin": "~1.2",
         "laminas/laminas-developer-tools": "dev-master",
-        "laminas/laminastool": "dev-master",
+        "zendframework/zftool": "dev-master",
         "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "~1.0"
     },
