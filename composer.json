@@ -24,7 +24,7 @@
         "php": ">=5.3.3",
         "laminas-api-tools/api-tools": "dev-master",
         "laminas-api-tools/api-tools-configuration": "dev-master",
-        "laminas/laminas": "dev-develop",
+        "zendframework/zendframework": "dev-develop",
         "laminas/laminas-zendframework-bridge": "^1.0",
         "rwoverdijk/assetmanager": "dev-master"
     },
@@ -32,7 +32,7 @@
         "laminas-api-tools/api-tools-admin": "dev-master",
         "laminas-api-tools/api-tools-welcome": "dev-master",
         "laminas/laminas-developer-tools": "dev-master",
-        "laminas/laminastool": "dev-master",
+        "zendframework/zftool": "dev-master",
         "roave/security-advisories": "dev-master"
     },
     "replace": {
