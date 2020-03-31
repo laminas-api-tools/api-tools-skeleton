@@ -1,5 +1,5 @@
 Laminas API Tools Skeleton Application
-==============================
+======================================
 
 Requirements
 ------------
@@ -18,7 +18,7 @@ has distribution tarballs and zipballs available.
 Untar it:
 
 ```bash
-$ tar xlaminas api-tools-skeleton-{version}.tgz
+$ tar xzf api-tools-skeleton-{version}.tgz
 ```
 
 (Where `{version}` is the version you downloaded.)
@@ -33,7 +33,7 @@ $ unzip api-tools-skeleton-{version}.zip
 
 ### Via Composer (create-project)
 
-You can use the `create-project` command from [Composer](http://getcomposer.org/)
+You can use the `create-project` command from [Composer](https://getcomposer.org/)
 to create the project in one go (you need to install [composer](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable)):
 
 ```bash
