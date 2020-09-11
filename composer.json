@@ -22,12 +22,6 @@
         "process-timeout": 5000,
         "sort-packages": true
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5.x-dev",
-            "dev-develop": "1.6.x-dev"
-        }
-    },
     "require": {
         "php": "^5.6 || ^7.0",
         "laminas-api-tools/api-tools": "^1.4",
@@ -70,9 +64,10 @@
         "development-enable": "laminas-development-mode enable",
         "development-status": "laminas-development-mode status",
         "post-create-project-cmd": [
-            "@development-enable"
+            "@development-enable",
+            "@php src/remove-package-artifacts.php"
         ],
-        "serve": "php -S 0.0.0.0:8080 -t public/",
+        "serve": "@php -S 0.0.0.0:8080 -t public/",
         "test": "phpunit"
     },
     "replace": {
