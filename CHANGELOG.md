@@ -2,27 +2,28 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.5.3 - TBD
-
-### Added
-
-- Nothing.
-
-### Changed
-
-- Nothing.
-
-### Deprecated
-
-- Nothing.
-
-### Removed
-
-- Nothing.
+## 1.5.3 - 2020-09-16
 
 ### Fixed
 
 - [#24](https://github.com/laminas-api-tools/api-tools-skeleton/pull/24) fixes how the `composer serve` command works to ensure it picks up UI assets.
+
+
+-----
+
+### Release Notes for [1.5.3](https://github.com/laminas-api-tools/api-tools-skeleton/milestone/1)
+
+
+
+### 1.5.3
+
+- Total issues resolved: **0**
+- Total pull requests resolved: **1**
+- Total contributors: **1**
+
+#### Bug
+
+ - [24: Added router public/index.php](https://github.com/laminas-api-tools/api-tools-skeleton/pull/24) thanks to @djnotes
 
 ## 1.5.2 - 2019-01-09
 
