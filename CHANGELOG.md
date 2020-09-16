@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Nothing.
+- [#24](https://github.com/laminas-api-tools/api-tools-skeleton/pull/24) fixes how the `composer serve` command works to ensure it picks up UI assets.
 
 ## 1.5.2 - 2019-01-09
 
