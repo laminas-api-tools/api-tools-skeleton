@@ -1,7 +1,7 @@
 !data/cache/.gitkeep
 .vagrant/
-/composer.lock
 /phpunit.xml
 /vendor/
 config/development.config.php
 data/cache/*
+.phpunit.result.cache
