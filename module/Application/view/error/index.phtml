@@ -2,7 +2,6 @@
 <h2><?= $this->message ?></h2>
 
 <?php if (! empty($this->display_exceptions)) : ?>
-
     <?php if (isset($this->exception)
         && ($this->exception instanceof \Throwable || $this->exception instanceof \Exception)) : ?>
 <hr/>
@@ -51,7 +50,6 @@
         <?php endif ?>
 
     <?php else : ?>
-
 <h3>No Exception available</h3>
 
     <?php endif ?>

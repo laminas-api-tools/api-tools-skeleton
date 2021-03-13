@@ -9,10 +9,10 @@
 use Laminas\ApiTools\Admin\Model\ModulePathSpec;
 
 return [
-    'view_manager' => [
+    'view_manager'            => [
         'display_exceptions' => true,
     ],
-    'api-tools-admin' => [
+    'api-tools-admin'         => [
         'path_spec' => ModulePathSpec::PSR_4,
     ],
     'api-tools-configuration' => [

@@ -11,10 +11,10 @@ namespace Application;
 use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
-    'router' => [
+    'router'       => [
         'routes' => [
             'home' => [
-                'type' => 'Literal',
+                'type'    => 'Literal',
                 'options' => [
                     'route'    => '/',
                     'defaults' => [
@@ -25,7 +25,7 @@ return [
             ],
         ],
     ],
-    'controllers' => [
+    'controllers'  => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
         ],
@@ -36,13 +36,13 @@ return [
         'doctype'                  => 'HTML5',
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
-        'template_map' => [
+        'template_map'             => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ],
-        'template_path_stack' => [
+        'template_path_stack'      => [
             __DIR__ . '/../view',
         ],
     ],

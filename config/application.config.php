@@ -16,15 +16,15 @@ return [
     'module_listener_options' => [
         'module_paths' => [
             './module',
-            './vendor'
+            './vendor',
         ],
         // Using __DIR__ to ensure cross-platform compatibility. Some platforms --
         // e.g., IBM i -- have problems with globs that are not qualified.
-        'config_glob_paths' => [realpath(__DIR__) . '/autoload/{,*.}{global,local}.php'],
-        'config_cache_key' => 'application.config.cache',
-        'config_cache_enabled' => true,
-        'module_map_cache_key' => 'application.module.cache',
+        'config_glob_paths'        => [realpath(__DIR__) . '/autoload/{,*.}{global,local}.php'],
+        'config_cache_key'         => 'application.config.cache',
+        'config_cache_enabled'     => true,
+        'module_map_cache_key'     => 'application.module.cache',
         'module_map_cache_enabled' => true,
-        'cache_dir' => 'data/cache/',
+        'cache_dir'                => 'data/cache/',
     ],
 ];

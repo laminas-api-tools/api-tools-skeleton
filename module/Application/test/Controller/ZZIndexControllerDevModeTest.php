@@ -8,7 +8,6 @@
 
 namespace ApplicationTest\Controller;
 
-use Application\Controller\IndexController;
 use Laminas\Stdlib\ArrayUtils;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
@@ -26,17 +25,17 @@ class ZZIndexControllerDevModeTest extends AbstractHttpControllerTestCase
         // such as sample view templates, path stacks, module_listener_options,
         // etc.
         $configOverrides = [
-            'modules' => [
+            'modules'                 => [
                 'Laminas\ApiTools\Admin',
                 'Laminas\ApiTools\Admin\Ui',
             ],
             'module_listener_options' => [
                 'config_cache_enabled' => false,
-                'config_glob_paths' => [
+                'config_glob_paths'    => [
                     __DIR__ . '/../../../../config/autoload/{,*.}{global,local}.php',
                     __DIR__ . '/../../../../config/autoload/{,*.}{global,local}-development.php',
                 ],
-            ]
+            ],
         ];
 
         $this->setApplicationConfig(ArrayUtils::merge(
