@@ -23,6 +23,11 @@
     </rule>
     <rule ref="PSR1.Files.SideEffects">
         <exclude-pattern>public/index.php</exclude-pattern>
+        <exclude-pattern>src/remove-package-artifacts.php</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Files.LineLength.TooLong">
+        <exclude-pattern>config/*</exclude-pattern>
+        <exclude-pattern>*.phtml</exclude-pattern>
     </rule>
 
     <!-- Paths to check -->

@@ -33,6 +33,7 @@
     "require-dev": {
         "laminas-api-tools/api-tools-admin": "^1.6",
         "laminas-api-tools/api-tools-asset-manager": "^1.2",
+        "laminas/laminas-coding-standard": "~1.0.0",
         "laminas/laminas-composer-autoloading": "^2.1",
         "laminas/laminas-developer-tools": "^1.2.1",
         "laminas/laminas-test": "^3.4",
