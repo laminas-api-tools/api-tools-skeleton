@@ -1,26 +1,22 @@
 <?xml version="1.0"?>
-<ruleset name="Laminas coding standard">
-    <description>Laminas coding standard</description>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
 
-    <!-- display progress -->
-    <arg value="p"/>
+    <arg name="basepath" value="."/>
+    <arg name="cache" value=".phpcs-cache"/>
     <arg name="colors"/>
-    <arg name="extensions" value="php,dist,phtml"/>
+    <arg name="extensions" value="php"/>
+    <arg name="parallel" value="80"/>
 
-    <!-- inherit rules from: -->
-    <rule ref="PSR2"/>
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-    <rule ref="Generic.Formatting.SpaceAfterNot"/>
-    <rule ref="Squiz.WhiteSpace.OperatorSpacing">
-        <properties>
-            <property name="ignoreNewlines" value="true"/>
-        </properties>
-    </rule>
-    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
-        <properties>
-            <property name="ignoreBlankLines" value="false"/>
-        </properties>
-    </rule>
+    <!-- Show progress -->
+    <arg value="p"/>
+
+    <!-- Paths to check -->
+    <file>config</file>
+    <file>src</file>
+    <file>module</file>
+
+    <!-- Exclusions -->
     <rule ref="PSR1.Files.SideEffects">
         <exclude-pattern>public/index.php</exclude-pattern>
         <exclude-pattern>src/remove-package-artifacts.php</exclude-pattern>
@@ -30,9 +26,6 @@
         <exclude-pattern>*.phtml</exclude-pattern>
     </rule>
 
-    <!-- Paths to check -->
-    <file>config</file>
-    <file>module</file>
-    <file>public/index.php</file>
-    <file>src</file>
+    <!-- Include all rules from the Laminas Coding Standard -->
+    <rule ref="LaminasCodingStandard"/>
 </ruleset>

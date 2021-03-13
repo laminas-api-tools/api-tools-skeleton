@@ -27,14 +27,13 @@ if (! empty($this->reason)) :
             $reasonMessage = 'We cannot determine at this time why a 404 was generated.';
             break;
     }
-?>
+    ?>
 
 <p><?= $reasonMessage ?></p>
 
 <?php endif ?>
 
 <?php if (! empty($this->controller)) : ?>
-
 <dl>
     <dt>Controller:</dt>
     <dd><?= $this->escapeHtml($this->controller) ?>
@@ -51,7 +50,6 @@ if (! empty($this->reason)) :
 <?php endif ?>
 
 <?php if (! empty($this->display_exceptions)) : ?>
-
     <?php if (isset($this->exception)
         && ($this->exception instanceof \Throwable || $this->exception instanceof \Exception)) : ?>
 <hr/>
@@ -100,7 +98,6 @@ if (! empty($this->reason)) :
         <?php endif ?>
 
     <?php else : ?>
-
 <h3>No Exception available</h3>
 
     <?php endif ?>

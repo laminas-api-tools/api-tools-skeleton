@@ -5,10 +5,14 @@
  * and overrides the Laminas\ApiTools\OAuth2\Service\OAuth2Server to provide the ability to create named
  * OAuth2\Server instances.
  */
+
+use Laminas\ApiTools\MvcAuth\Factory\NamedOAuth2ServerFactory;
+use Laminas\ApiTools\OAuth2\Service\OAuth2Server;
+
 return [
     'service_manager' => [
         'factories' => [
-            \Laminas\ApiTools\OAuth2\Service\OAuth2Server::class => \Laminas\ApiTools\MvcAuth\Factory\NamedOAuth2ServerFactory::class,
+            OAuth2Server::class => NamedOAuth2ServerFactory::class,
         ],
     ],
 ];
