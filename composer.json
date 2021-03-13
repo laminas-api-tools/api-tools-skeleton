@@ -35,9 +35,15 @@
         "laminas-api-tools/api-tools-asset-manager": "^1.2",
         "laminas/laminas-composer-autoloading": "^2.1",
         "laminas/laminas-developer-tools": "^1.2.1",
-        "laminas/laminas-test": "^3.2",
+        "laminas/laminas-test": "^3.4",
+        "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "^1.3"
+    },
+    "conflict": {
+        "laminas/laminas-hydrator": "<2.0",
+        "laminas/laminas-stdlib": "<3.2.1",
+        "laminas/laminas-view": "<2.10.1"
     },
     "suggest": {
         "laminas-api-tools/api-tools-doctrine": "laminas-api-tools/api-tools-doctrine ^2.2 to create Doctrine-Connected REST services",
