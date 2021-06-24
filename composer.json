@@ -36,7 +36,7 @@
         "laminas/laminas-coding-standard": "~2.3.0",
         "laminas/laminas-composer-autoloading": "^2.1",
         "laminas/laminas-developer-tools": "^1.2.1",
-        "laminas/laminas-test": "^3.4",
+        "laminas/laminas-test": "^3.5",
         "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-master",
         "zfcampus/zf-deploy": "^1.3"
