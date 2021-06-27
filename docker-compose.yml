@@ -1,6 +1,6 @@
 version: "2"
 services:
-  apigility:
+  api-tools:
     build:
       context: .
       dockerfile: Dockerfile
