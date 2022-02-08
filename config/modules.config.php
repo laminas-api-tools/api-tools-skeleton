@@ -7,8 +7,6 @@
 declare(strict_types=1);
 
 return [
-    'Laminas\Mvc\I18n',
-    'Laminas\I18n',
     'Laminas\Db',
     'Laminas\Filter',
     'Laminas\Hydrator',
