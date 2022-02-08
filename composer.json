@@ -20,7 +20,12 @@
     },
     "config": {
         "process-timeout": 5000,
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "laminas-api-tools/api-tools-asset-manager": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "laminas/laminas-component-installer": true
+        }
     },
     "require": {
         "php": "^7.3 || ~8.0.0",
@@ -72,8 +77,8 @@
         "development-status": "laminas-development-mode status",
         "post-create-project-cmd": [
             "@development-enable",
-            "php -r \"if (file_exists(\"src/remove-package-artifacts.php\")) include \"src/remove-package-artifacts.php\";\"",
-            "php -r \"if (file_exists(\"CHANGELOG.md\")) unlink(\"CHANGELOG.md\");\""
+            "php -r \"if (file_exists('src/remove-package-artifacts.php')) include 'src/remove-package-artifacts.php';\"",
+            "php -r \"if (file_exists('CHANGELOG.md')) unlink('CHANGELOG.md');\""
         ],
         "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
         "test": "phpunit"
