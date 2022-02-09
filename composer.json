@@ -43,7 +43,9 @@
         "laminas/laminas-developer-tools": "^1.2.1",
         "laminas/laminas-test": "^3.5",
         "phpunit/phpunit": "^9.5",
+        "psalm/plugin-phpunit": "^0.16.1",
         "roave/security-advisories": "dev-master",
+        "vimeo/psalm": "^4.10",
         "zfcampus/zf-deploy": "^1.3"
     },
     "conflict": {
@@ -72,6 +74,7 @@
     "scripts": {
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
         "development-disable": "laminas-development-mode disable",
         "development-enable": "laminas-development-mode enable",
         "development-status": "laminas-development-mode status",
