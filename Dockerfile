@@ -21,16 +21,17 @@
 #   docker build -f Dockerfile-dev -t api-tools .
 #   docker run -it -p "8080:80" -v $PWD:/var/www api-tools
 #
-FROM php:7.3-apache
+FROM php:8.0-apache
 
 RUN apt-get update \
- && apt-get install -y git libzip-dev \
+ && apt-get install -y git libzip-dev libicu-dev \
  && docker-php-ext-install zip \
+ && docker-php-ext-configure intl \
+ && docker-php-ext-install intl \
  && a2enmod rewrite \
  && sed -i 's!/var/www/html!/var/www/public!g' /etc/apache2/sites-available/000-default.conf \
  && mv /var/www/html /var/www/public \
- && curl -sS https://getcomposer.org/installer \
-  | php -- --install-dir=/usr/local/bin --filename=composer \
+ && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
  && echo "AllowEncodedSlashes On" >> /etc/apache2/apache2.conf
 
 WORKDIR /var/www
