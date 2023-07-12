@@ -2,6 +2,7 @@
 .vagrant/
 /phpunit.xml
 /vendor/
+composer.lock
 config/development.config.php
 data/cache/*
 .phpunit.result.cache
