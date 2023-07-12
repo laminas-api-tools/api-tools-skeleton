@@ -9,7 +9,7 @@ LC_ALL=C.UTF-8
 apt-get update
 apt-get install software-properties-common ca-certificates lsb-release apt-transport-https
 add-apt-repository ppa:ondrej/php
-apt-get install -y apache2 git curl php8.2 php8.2-bcmath php8.2-bz2 php8.2-cli php8.2-curl php8.2-intl php8.2-json php8.2-mbstring php8.2-opcache php8.2-soap php8.2-sqlite3 php8.2-xml php8.2-xsl php8.2-zip libapache2-mod-php8.2
+apt-get install -y apache2 git curl php8.2 php8.2-bcmath php8.2-bz2 php8.2-cli php8.2-curl php8.2-intl php8.2-mbstring php8.2-opcache php8.2-soap php8.2-sqlite3 php8.2-xml php8.2-xsl php8.2-zip libapache2-mod-php8.2
 
 # Configure Apache
 echo "<VirtualHost *:80>
