@@ -5,8 +5,11 @@ VAGRANTFILE_API_VERSION = '2'
 
 @script = <<SCRIPT
 # Install dependencies
+LC_ALL=C.UTF-8
 apt-get update
-apt-get install -y apache2 git curl php7.0 php7.0-bcmath php7.0-bz2 php7.0-cli php7.0-curl php7.0-intl php7.0-json php7.0-mbstring php7.0-opcache php7.0-soap php7.0-sqlite3 php7.0-xml php7.0-xsl php7.0-zip libapache2-mod-php7.0
+apt-get install software-properties-common ca-certificates lsb-release apt-transport-https
+add-apt-repository ppa:ondrej/php
+apt-get install -y apache2 git curl php8.2 php8.2-bcmath php8.2-bz2 php8.2-cli php8.2-curl php8.2-intl php8.2-json php8.2-mbstring php8.2-opcache php8.2-soap php8.2-sqlite3 php8.2-xml php8.2-xsl php8.2-zip libapache2-mod-php8.2
 
 # Configure Apache
 echo "<VirtualHost *:80>
@@ -44,7 +47,7 @@ echo "** [Laminas] Visit http://localhost:8080 in your browser for to view the a
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'bento/ubuntu-16.04'
+  config.vm.box = 'bento/ubuntu-22.04'
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.synced_folder '.', '/var/www', owner: "www-data", group: "www-data"
   config.vm.provision 'shell', inline: @script

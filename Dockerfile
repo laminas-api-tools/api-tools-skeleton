@@ -21,8 +21,8 @@
 #   docker build -f Dockerfile-dev -t api-tools .
 #   docker run -it -p "8080:80" -v $PWD:/var/www api-tools
 #
-FROM composer:2.3.5 AS get-composer
-FROM php:8.0-apache
+FROM composer:2 AS get-composer
+FROM php:8.2-apache
 
 RUN apt-get update \
  && apt-get install -y git libzip-dev libicu-dev \
