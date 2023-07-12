@@ -33,7 +33,7 @@
         "laminas-api-tools/api-tools-content-negotiation": "^1.8",
         "laminas-api-tools/api-tools-documentation": "^1.6",
         "laminas-api-tools/api-tools-rest": "^1.8",
-        "laminas/laminas-component-installer": "^2.7",
+        "laminas/laminas-component-installer": "^3.1",
         "laminas/laminas-development-mode": "^3.9"
     },
     "require-dev": {
